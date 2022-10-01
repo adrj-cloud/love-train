@@ -1,23 +1,39 @@
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=320' />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Love moko!!<3</title>
+<body>
+    <div class="ost-multi-header">
+    <div class="w3-container w3-center w3-animate-zoom">
+    <div class="wrapper">
+        <div class="container">
+            <p id="question"><span>Do u love me?</span></p>
+            <button class="btn" id="Oo"><b>Oo</b></button>
+            <button class="btn" id="Hinde"><b>Hinde</b></button>
+        </div>
+    </div> 
+</body>
+<script>
+    const noBtn = document.getElementById('Hinde');
+    const yesBtn = document.getElementById('Oo');
+    const ques = document.getElementById('question');
+    let btn = document.getElementById('btn');
+        let position;
+        noBtn.addEventListener('mouseover',() =>{
+        let rand = Math.floor(Math.random() * (500 - 100) + 1);
+        let rand2 = Math.floor(Math.random() * (-300 - 100) + 1);
+        noBtn.style.transform = "translate("+rand+"px,"+rand2+"px)";
+        });
+    yesBtn.addEventListener("click",()=>{
+        ques.innerHTML = "AWABYUUU MORE <33"
+    })
+</script>
+<div>
+    <p1>by your forever love</p1>
+</div>
+</html>
