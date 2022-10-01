@@ -1,23 +1,51 @@
-# Compiled class file
-*.class
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: navajowhite;
+  color: black;
+}
+input{
+    width: 150px;
+    height: 80px;
+    margin-top: 21px;
+    position: absolute;
+    appearance: none;
+    transform: translate(-75px);
+    z-index: 1;
+    border-radius: 80px;
+}
+input:checked ~ span{
+    background-color: green;
+    box-shadow: 0px 10px 25px rgba(0, 255, 0, 20);
+}
+:no-button{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    transition: 0.5s;
+    transform: translate(5px, 5px);
+}
+input:checked ~ label{
+    transform: translate(75px, 5px);
+    background-color: white;
+}
 
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+label::before{
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    transform: translate(-4px, 15px);
+    box-shadow: 34px 0px 0px red;
+    background-color: red;
+    transition: 0.5s;
+}
